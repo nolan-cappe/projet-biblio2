@@ -1,76 +1,102 @@
-/* typography */
+/* Typography */
 
 @font-face {
+
   font-family: 'Dumbledor';
-  src: url("/font/dum1.ttf") format("truetype");
+  src: url("../font/dum1.ttf") format("truetype");
+
 }
 
 @font-face {
+
   font-family: 'Roboto';
-  src: url("/font/Roboto-Regular.ttf") format("truetype");
+  src: url("../font/Roboto-Regular.ttf") format("truetype");
+
 }
+
+
 
 h1, h2, h3 {
+
   font-family: 'Dumbledor';
+
 }
 
 h1 {
+
   font-size: 3rem;
   line-height: 1;
   text-align: center;
+
 }
 
 h2.livre {
+
+  font-family: 'Dumbledor';
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 5px;
+
 }
 
 p.livre {
+
   font-family: 'Dumbledor';
   margin-top: 0px; 
   margin-bottom: 5px; 
   font-size: 1.3rem;
   text-align: center;
+
 }
   
 p, li, a {
+
   font-family: 'Roboto';
   font-size: 1rem;
   line-height: 0.8;
   color: black;
+
 }
 
 /* Corps de la page */
 
 body {
+
   background-color: #6d071a;
   margin: 0;
   padding: 0;
+
 }
 
 header {
+
   background-color: #F4D35E;
+
 }
 
 .header {
+
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto auto;
   align-items: center;
   justify-self: center;
   text-align: center;
   color: #6d071a;
   text-decoration: none;
+
 }
 
 
 .container {
+
   max-width: 1400px;
   margin: 20px auto;
   padding: 20px;
-  }
+
+}
   
 .grid {
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
@@ -80,6 +106,7 @@ header {
   /* Article */
 
 .articlelivre {
+
   display: grid;
   grid-template-rows: auto auto 1fr auto auto auto auto;
   align-items: start; 
@@ -88,42 +115,55 @@ header {
   border: 1px solid white;
   border-radius: 10px;
   transition: transform 0.2s;
+
 }
 
 .articlelivre:hover {
+
   transform: scale(1.05);
+
 }
 
 .info {
+
   margin-bottom: 5px;
+
 }
 
 .footer a {
+
   text-decoration: none;
+
 }
 
 .footer {
+
   text-align: center;
   background-color: #F4D35E;
   font-size: 1.3em;
   padding-top: 10px;
   padding-bottom: 10px;
+
 }
 
   /* Images */
 
 #logo {
+
   width: 184.25px;
   height: 115.75px;
+
 }
 
 #got, #lotr, #hp, #ça, #jk, #twd, #db, #hg, #tws, #pj {
+
   width: 200px;
   height: 300px;
   display: block;
   margin: auto;
   border-right: 5px solid #FEFEFEFE;
   border-radius: 8px;
+
 }
 
   /* Responsivité */
@@ -147,6 +187,7 @@ header {
     width: 150px;
     height: 250px;
   }
+
 }
 
 @media (max-width: 768px) {
@@ -169,4 +210,5 @@ header {
     width: 150px;
     height: 250px;
   }
+
 }
