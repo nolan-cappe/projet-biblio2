@@ -76,14 +76,22 @@ header {
 
 .header {
 
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  justify-self: center;
+  display: grid; /* Utilisation de Grid */
+  place-items: center;
+  /*align-items: center;
+  justify-self: center;*/
   text-align: center;
   color: #6d071a;
   text-decoration: none;
 
+}
+
+/* Conteneur du logo et du titre */
+.logo-title {
+  display: grid; /* Utilisation de Grid */
+  grid-template-columns: auto auto; /* Deux colonnes : une pour le logo, une pour le titre */
+  align-items: center; /* Aligne verticalement le logo et le titre */
+  gap: 15px; /* Espacement entre le logo et le titre */
 }
 
 
