@@ -152,6 +152,8 @@ header {
 
   width: 184.25px;
   height: 115.75px;
+  display: block;
+  margin: auto;
 
 }
 
