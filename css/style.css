@@ -14,8 +14,6 @@
 
 }
 
-
-
 h1, h2, h3 {
 
   font-family: 'Dumbledor';
@@ -30,7 +28,7 @@ h1 {
 
 }
 
-h2.livre {
+.livre h2 {
 
   font-family: 'Dumbledor';
   font-size: 1.4rem;
@@ -39,8 +37,9 @@ h2.livre {
 
 }
 
-p.livre {
+.livre p {
 
+  font-style: italic;
   font-family: 'Dumbledor';
   margin-top: 0px; 
   margin-bottom: 5px; 
@@ -54,7 +53,8 @@ p, li, a {
   font-family: 'Roboto';
   font-size: 1rem;
   line-height: 0.8;
-  color: black;
+  color: #000;
+  text-decoration: none;
 
 }
 
@@ -89,9 +89,9 @@ header {
   display: grid;
   grid-template-columns: auto auto; 
   align-items: center; 
-  gap: 15px; 
-}
+  gap: 15px;
 
+}
 
 .container {
 
@@ -136,6 +136,12 @@ header {
 
 }
 
+.info-weight {
+
+  font-weight: bold; ;
+
+}
+
 .footer a {
 
   text-decoration: none;
@@ -151,6 +157,120 @@ header {
   padding-bottom: 10px;
 
 }
+
+  /* Détails */
+
+.details-button {
+
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color: #d1af76;
+  text-align: center;
+  display: block;
+  margin: auto;
+  padding: 5px;
+  font-family: 'Roboto';
+  font-size: 1rem;
+  line-height: 0.8;
+  color: #000;
+
+}
+
+.details-button:hover {
+
+  transform: scale(1.05);
+
+}
+
+.details-main {
+
+  margin: 20px auto;
+  padding: 20px;
+
+}
+
+.details-grid {
+
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0px;
+
+}
+
+.container-details-img {
+  
+  border: 1px solid white;
+  border-radius: 8px;
+  max-width: 800px;
+  background-color: #d1af76;
+  margin: 20px auto;
+  padding: 20px ;
+
+}
+
+.container-details-texte {
+
+  border: 1px solid white;
+  border-radius: 8px;
+  max-width: 800px;
+  background-color: #d1af76;
+  margin: 20px auto;
+  padding: 20px ;
+
+}
+
+.details-img {
+
+  width: 350px;
+  height: 500px;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+
+}
+
+.details-img:hover {
+
+  transform: scale(1.3);
+
+}
+
+.details-info p {
+
+  line-height: 1.5;
+  font-size: 0.9rem;
+  text-align: left;
+  margin-top: 10px;
+
+}
+
+.details-info span {
+
+  font-weight: bold;
+
+}
+
+.h2details {
+
+  font-family: 'Dumbledor';
+  font-size: 1.7em;
+  text-align: center;
+  margin-bottom: 5px;
+
+}
+
+.pdetails {
+
+  font-style: italic;
+  margin-top: 0px; 
+  margin-bottom: 5px; 
+  font-family: 'Dumbledor';
+  font-size: 1.6em;
+  text-align: center;
+
+}
+
 
   /* Images */
 
@@ -179,44 +299,110 @@ header {
 @media (max-width: 1024px) {
 
   .grid {
-      grid-template-columns: repeat(2, 1fr);
+
+    grid-template-columns: repeat(2, 1fr);
+
   }
 
   h1 {
-      font-size: 2.5rem;
-      line-height: 1;
+
+    font-size: 2.5rem;
+    line-height: 1;
+
   }
 
   p, li {
+
     font-size: 1rem;
+
   }
   
   #got, #lotr, #hp, #ça, #jk, #twd, #db, #hg, #tws, #pj {
+
     width: 150px;
     height: 250px;
+
   }
 
+  
+  .details-grid {
+
+    grid-template-columns: 1fr ;
+
+  }
+
+  .details-img:hover {
+
+    transform: scale(1.18);
+
+  }
+
+  .details-info p {
+
+    font-size: 0.7rem;
+
+  }
+
+  .details-img {
+
+    width: 250px;
+    height: 400px;
+
+  }
+  
 }
 
 @media (max-width: 768px) {
 
   .grid {
-      grid-template-columns: 1fr;
+
+    grid-template-columns: 1fr;
+
   }
 
   h1 {
-      font-size: 2rem;
-      line-height: 1;
+
+    font-size: 2rem;
+    line-height: 1;
 
   }
 
   p, li {
-      font-size: 0.9rem;
+
+    font-size: 0.9rem;
+
   }
 
   #got, #lotr, #hp, #ça, #jk, #twd, #db, #hg, #tws, #pj {
+
     width: 150px;
     height: 250px;
+
+  }
+
+  .details-grid {
+
+    grid-template-columns: 1fr ;
+
+  }
+
+  .details-img:hover {
+
+    transform: scale(1.18);
+
+  }
+
+  .details-info p {
+
+    font-size: 0.7rem;
+
+  }
+
+  .details-img {
+
+    width: 250px;
+    height: 400px;
+    
   }
 
 }
